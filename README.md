@@ -5,16 +5,17 @@
 The running order for this block's katas is:
 
 1. `dnaPairs` - we have created the test file for this one for you
-2. `getTweetData` 
-3. `calculateDivisors` 
-4. `tillAddition` 
-5. `changeCalculator` 
-6. `sentenceToCamelCase` 
-7. `foldString` 
-8.  `pigLatin`
-9.  `morseCode` 
-10. `rotateArray` 
-11. `herdTheBabies` 
+2. `getTweetData`
+3. `calculateDivisors`
+4. `updateRemoteStudents`
+5. `tillAddition`
+6. `changeCalculator`
+7. `sentenceToCamelCase`
+8. `foldString`
+9. `pigLatin`
+10. `morseCode`
+11. `rotateArray`
+12. `herdTheBabies`
 
 ## Instructions
 
