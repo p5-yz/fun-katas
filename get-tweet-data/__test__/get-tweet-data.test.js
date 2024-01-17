@@ -1,0 +1,1 @@
+const getTweetData = require('../getTweetData')
