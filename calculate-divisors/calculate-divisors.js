@@ -2,3 +2,5 @@
 function calculateDivisors(num) {
   // Your code here
 }
+
+modules.export = calculateDivisors
