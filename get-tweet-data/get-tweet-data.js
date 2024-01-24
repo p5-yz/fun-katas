@@ -22,8 +22,28 @@ getTweetData("I am #coding with @northcoders I love #coding and @northcoders");
 // should return { tags: ['#coding'], mentions: ['@northcoders'], tagCount: 1, mentionCount: 1, length: 62 }
 */
 
-function getTweetData (tweet) {
+function getTweetData (tweetString) {
+  const tweetStr = tweetString.split(' ')
+  const hashes = [], mentions = []
+  tweetStr.forEach(function (tweet){
+    if (tweet[0] === '#')
+      hashes.push(tweet)
+      if (tweet[0] === '@')
+      mentions.push(tweet)
+  })
+  console.log(hashes,mentions)
+  const tweet = { tags: [], mentions: [], tagCount: 0, mentionCount: 0, length: tweetString.length }
+  for (const hash of hashes)
+    tweet.tags.push(hash)
+  tweet.tagCount = hashes.length
+
+  for (const mention of mentions)
+    tweet.mentions.push(mention)
+  tweet.mentionCount = mentions.length
+
+  console.log(tweet)
   // Your code here
+  return tweet
 };
 
 module.exports = getTweetData;
